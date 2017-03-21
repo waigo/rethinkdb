@@ -1,4 +1,4 @@
-# waigo-plugin-rethinkdb-models
+# waigo-plugin-rethinkdb
 
 This [waigo](http://waigojs.com) plugin provides a database connection and
 corresponding model layer for working with RethinkDB databases.
@@ -17,7 +17,7 @@ Database connections:
 ## Installation
 
 ```bash
-$ npm install waigo-plugin-rethinkdb-models
+$ npm install waigo-plugin-rethinkdb
 ```
 
 ## Usage

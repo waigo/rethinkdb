@@ -1,5 +1,5 @@
 {
-  "name": "waigo-plugin-rethinkdb-models",
+  "name": "waigo-plugin-rethinkdb",
   "version": "2.0.0",
   "description": "Waigo database connection and model layer for RethinkDB",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/waigo/rethinkdb-models.git"
+    "url": "https://github.com/waigo/rethinkdb.git"
   },
   "keywords": [
     "waigo",
@@ -21,9 +21,9 @@
   "author": "Ramesh Nair <ram@hiddentao.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/waigo/rethinkdb-models/issues"
+    "url": "https://github.com/waigo/rethinkdb/issues"
   },
-  "homepage": "https://github.com/waigo/rethinkdb-models",
+  "homepage": "https://github.com/waigo/rethinkdb",
   "devDependencies": {
     "chai": "~1.9.1",
     "co": "~3.0.5",
