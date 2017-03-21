@@ -34,7 +34,7 @@
     "matchdep": "~0.3.0",
     "shelljs": "~0.2.6",
     "supertest": "~0.10.0",
-    "waigo": "2.1.0-beta4",
+    "waigo": "^2.2.0",
     "waigo-test-utils": "^2.5.0"
   },
   "dependencies": {
