@@ -1,0 +1,21 @@
+branches:
+  only:
+    - master
+
+language: node_js
+
+node_js:
+  - "4"
+  - "5"
+
+before_script:
+  - "npm install -g grunt-cli"
+  - "npm install"
+
+script:
+  - "npm run test"
+
+notifications:
+  email:
+    - ram@hiddentao.com
+

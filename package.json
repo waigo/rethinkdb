@@ -1,0 +1,45 @@
+{
+  "name": "waigo-plugin-rethinkdb-models",
+  "version": "2.0.0",
+  "description": "Waigo database connection and model layer for RethinkDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waigo/rethinkdb-models.git"
+  },
+  "keywords": [
+    "waigo",
+    "waigoplugin",
+    "koa",
+    "rethinkdb",
+    "database",
+    "models"
+  ],
+  "author": "Ramesh Nair <ram@hiddentao.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waigo/rethinkdb-models/issues"
+  },
+  "homepage": "https://github.com/waigo/rethinkdb-models",
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "co": "~3.0.5",
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-mocha-test": "~0.10.0",
+    "load-grunt-tasks": "~0.4.0",
+    "matchdep": "~0.3.0",
+    "shelljs": "~0.2.6",
+    "supertest": "~0.10.0",
+    "waigo": "2.1.0-beta4",
+    "waigo-test-utils": "^2.5.0"
+  },
+  "dependencies": {
+    "debug": "~0.8.1",
+    "thinodium": "^1.2.0",
+    "thinodium-rethinkdb": "^1.2.0"
+  }
+}
