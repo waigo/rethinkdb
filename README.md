@@ -1,5 +1,10 @@
 # waigo-plugin-rethinkdb
 
+[![Build Status](https://secure.travis-ci.org/waigo/waigo.png)](http://travis-ci.org/waigo/rethinkdb)
+[![NPM module](https://badge.fury.io/js/waigo.png)](https://npmjs.org/package/waigo-plugin-rethinkdb)
+[![Waigo channel on discord](https://img.shields.io/badge/discord-join%20chat-738bd7.svg?style=flat-square)](https://discord.gg/Jf3pGjf)
+[![Follow on Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow&maxAge=2592000)](https://twitter.com/waigojs)
+
 This [waigo](http://waigojs.com) plugin provides a database connection and
 corresponding model layer for working with RethinkDB databases.
 
@@ -47,6 +52,15 @@ module.exports = function(config) {
 
   ...
 }
+```
+
+## Development
+
+To run the tests:
+
+```shell
+$ npm install
+$ npm test
 ```
 
 

@@ -4,7 +4,7 @@
   "description": "Waigo database connection and model layer for RethinkDB",
   "main": "index.js",
   "scripts": {
-    "test": "grunt"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
@@ -27,15 +27,13 @@
   "devDependencies": {
     "chai": "~1.9.1",
     "co": "~3.0.5",
-    "grunt": "~0.4.4",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-mocha-test": "~0.10.0",
-    "load-grunt-tasks": "~0.4.0",
-    "matchdep": "~0.3.0",
+    "coffee-script": "^1.12.4",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.1.0",
     "shelljs": "~0.2.6",
     "supertest": "~0.10.0",
     "waigo": "^2.2.0",
-    "waigo-test-utils": "^2.5.0"
+    "waigo-test-utils": "^2.5.2"
   },
   "dependencies": {
     "debug": "~0.8.1",
