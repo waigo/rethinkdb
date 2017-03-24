@@ -1,18 +1,11 @@
-"use strict";
-
-
 const waigo = global.waigo,
   _ = waigo._,
   logger = waigo.load('support/logger').create('rethinkdb'),
   Q = waigo.load('support/promise'),
-  Thinodium = require('thinodium');
-
-
+  Thinodium = require('thinodium')
 
 // keep track of connections
-var _connections = {};
-
-
+const _connections = {}
 
 
 /**
@@ -26,16 +19,15 @@ var _connections = {};
  *
  * @return {Object} db connection.
  */
-exports.create = function*(id, logger, dbConfig) {
-  logger.info('Connecting to RethinkDB', id);
+exports.create = function *(id, logger, dbConfig) {
+  logger.info('Connecting to RethinkDB', id)
 
-  let db = yield Thinodium.connect('rethinkdb', dbConfig.serverConfig);
+  let db = yield Thinodium.connect('rethinkdb', dbConfig.serverConfig)
 
-  _connections[id] = db;
+  _connections[id] = db
 
-  return db;
-};
-
+  return db
+}
 
 
 
@@ -44,16 +36,14 @@ exports.create = function*(id, logger, dbConfig) {
  *
  * @param {Object} logger The app logger
  */
-exports.closeAll = function*(logger) {
-  logger.info('Close all connections');
+exports.closeAll = function *(logger) {
+  logger.info('Close all connections')
 
   yield _.map(_connections, (db) => {
     return Q.try(() => {
       if (db.isConnected) {
         return db.disconnect()
-      }      
-    });
-  });
-};
-
-
+      }
+    })
+  })
+}
