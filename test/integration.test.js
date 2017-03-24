@@ -32,6 +32,5 @@ test['method override'] = {
 
     shell.rm('-rf', path.join(utils.appFolder, 'support'))
     shell.rm('-rf', path.join(utils.appFolder, 'models'))
-  },
-
+  }
 }
